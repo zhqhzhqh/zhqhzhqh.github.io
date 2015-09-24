@@ -9,8 +9,40 @@ tags: []
 
 # jekyll使用笔记
 
-> 安装
+## 安装
 
-> 配置
+* ruby
 
-> 写文章
+  最好在mac或者linux下使用 windows下ruby有很多问题
+
+* rake
+
+  ruby的编译工具， 类似Make与Ant之类
+
+* jekyll
+
+  一个文本转换工具，能将MarkDown，Html，Titile转换为标准静态网页
+
+* bootstrap
+
+  使用jekyll技术的博客库，具有评论功能
+
+## 写文章
+
+* 生成文章
+
+  rake post title="文章名字，最好是英文，中文在本地会出现无法找到"
+
+* 编辑文章
+
+  使用喜爱的工具写文章，我喜欢用MarkDownPad2写MarkDown文章
+
+## 同步到GitHub Pages配置
+
+* 关于GitHub Pages
+
+  Github Pages 是一个可以托管静态网页的地方，它提供了对Jekyll的支持
+
+* 同步代码到仓库
+
+  将网站代码托管到仓库中，然后使用Github桌面版工具提交与同步代码
