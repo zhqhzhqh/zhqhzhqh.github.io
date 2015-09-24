@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-	
-    <script>
-	  var _hmt = _hmt || [];
-	  (function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?504ee2a60d51986a7a579436d3ad737a";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	  })();
-    </script>
-
-  </body>
-
-</html>
+---
+theme :
+  name : bootstrap-3
+---
+{% include JB/setup %}
+{% include themes/bootstrap-3/default.html %}
