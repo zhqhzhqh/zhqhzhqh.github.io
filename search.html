@@ -6,7 +6,15 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<h2>搜索结果</h2>
+<script>
+    var reg = new RegExp("(^|&)"+ "q" +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r!=null){
+        var search = unescape(r[2]);
+        Document.write("<h2>"+search+"</h2>");
+    }
+</script>
+
 <div id="bdcs-frame-box"></div>
 <script type="text/javascript">
 var bdcsFrameSid="6088812900811240807";
