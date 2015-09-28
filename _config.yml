@@ -70,7 +70,10 @@ JB :
   #
   archive_path: /archive.html
   categories_path : /categories.html
-  tags_path : /tags.html
+  tags_path : /ctags.html
+  search_path : /search.html
+  message_path : /waitmessge.html
+  about_path : whatabout.html
   atom_path : /atom.xml
   rss_path : /rss.xml
 

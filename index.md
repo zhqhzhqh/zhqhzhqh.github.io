@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Owl Night
+title: 首页
 tagline: stay hungry,stay foolish
 ---
 {% include JB/setup %}
