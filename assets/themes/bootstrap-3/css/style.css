@@ -86,6 +86,6 @@ a.navbar-brand {
   padding: 10px 10px;
 }
 
-#BottomBox {
+#footer .clearfix {
 	display : none;
 }
