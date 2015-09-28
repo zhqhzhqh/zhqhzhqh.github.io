@@ -86,6 +86,6 @@ a.navbar-brand {
   padding: 10px 10px;
 }
 
-.all-cut-wrap.footer {
+.all-cut-wrap.clearfix {
 	display : none;
 }
