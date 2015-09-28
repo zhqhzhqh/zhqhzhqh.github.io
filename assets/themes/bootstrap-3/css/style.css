@@ -85,3 +85,8 @@ h1, h2, h3, h4 {
 a.navbar-brand {
   padding: 10px 10px;
 }
+
+
+#BottomBox {
+	display : none !important;
+}
