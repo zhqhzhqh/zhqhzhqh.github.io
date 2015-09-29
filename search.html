@@ -26,3 +26,15 @@ var bdcsFrameResultNum = 10;
 var bdcsFrameBgColor = "#ffffff";
 </script>
 <script type="text/javascript" src="http://zhannei.baidu.com/static/js/iframe.js"></script>
+<script type="text/javascript">
+    window.onload=function(){ 
+        var target = document.getElementById("#BottomBox");
+        if (target != null) {
+            if (target.style.display=="block"){
+                target.style.display="none";
+            } else {
+                target.style.display="block";
+            }
+        }
+    }
+</script>
