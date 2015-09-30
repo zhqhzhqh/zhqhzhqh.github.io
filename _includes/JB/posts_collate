@@ -27,17 +27,19 @@ Usage:
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
   
     {% if forloop.first %}
-      <h2>{{this_year}}</h2>
-      <h3>{{this_month}}</h3>
+      <h2 style="display: inline;">{{this_year}}  </h2>
+      <h3 style="display: inline;">{{this_month}}</h3>
 	  <br />
-      <ul>
+	  <br />
+      <table class="table table-bordered table-hover">
     {% endif %}
-  
-    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> &raquo;<span>{{ post.date | date: "%B %e, %Y" }}</span></li>
-	<br />
+    <tr>
+    <td><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></td>
+    <td><span>{{ post.date | date: "%B %e, %Y" }}</span></td>
+	</tr>
   
     {% if forloop.last %}
-      </ul>
+      </table>
     {% else %}
       {% if this_year != next_year %}
         </ul>
