@@ -20,10 +20,8 @@ group: navigation
     <h3>站内功能</h3>
 </div>
 <div>
-    <ul>
-        {% assign pages_list = site.pages %}
-        {% include JB/pages_list %}
-    </ul>
+    {% assign pages_list = site.pages %}
+    {% include custom/waitabout_list %}
 </div>
 
 

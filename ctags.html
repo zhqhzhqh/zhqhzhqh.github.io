@@ -13,7 +13,7 @@ group: navigation
 
 
 {% for tag in site.tags %} 
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+  <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
   <div>
     {% assign pages_list = tag[1] %}  
     {% include custom/pages_list %}
