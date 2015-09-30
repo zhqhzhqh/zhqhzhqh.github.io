@@ -20,6 +20,7 @@ Usage:
   This helper can be seen in use at: ../_layouts/default.html
 -->{% endcomment %}
 
+<table class="table table-bordered table-hover">
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
 {% else %}
@@ -41,5 +42,6 @@ Usage:
     {% endif %}
   {% endfor %}
 {% endif %}
+</table>
 {% assign pages_list = nil %}
 {% assign group = nil %}
