@@ -21,7 +21,7 @@ tagline: stay hungry,stay foolish
     <li> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
     </li>
     <br/>
-    {{ post.excerpt }}
+    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
     <br />
     <br />
     {% endfor %}
