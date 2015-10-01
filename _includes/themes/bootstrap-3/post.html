@@ -38,6 +38,8 @@
     {% endif %}
     </ul>
     <hr>
+    {% assign COMMENT_BASE_PATH = BASE_PATH %}
+    {% assign page_comment = page %}
     {% include JB/comments %}
   </div>
 </div>
